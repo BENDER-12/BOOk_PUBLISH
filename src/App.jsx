@@ -7,6 +7,7 @@ import BookDetailPage from "./pages/BookDetailPage"
 import PublishPage from "./pages/PublishPage"
 import ReadingPage from "./pages/ReadingPage"
 
+// ✅ FUNCTIONAL COMPONENT - No classes used
 function App() {
   return (
     <Router>
