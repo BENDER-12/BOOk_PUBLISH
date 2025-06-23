@@ -8,7 +8,6 @@ import PublishPage from "./pages/PublishPage"
 import ReadingPage from "./pages/ReadingPage"
 import './index.css';
 
-// ✅ FUNCTIONAL COMPONENT - No classes used
 function App() {
   return (
     <Router>
