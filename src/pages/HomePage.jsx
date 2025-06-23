@@ -108,7 +108,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* <HomePage/> */}
+      <HomePage/>
     </div>
 
   )
