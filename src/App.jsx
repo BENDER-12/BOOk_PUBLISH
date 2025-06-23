@@ -21,6 +21,7 @@ function App() {
             <Route path="/publish" element={<PublishPage />} />
             <Route path="/reading" element={<ReadingPage />} />
           </Routes>
+          <App/>
         </main>
         <Footer />
       </div>
