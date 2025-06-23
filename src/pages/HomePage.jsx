@@ -1,22 +1,27 @@
-import { Link } from "react-router-dom"
-import Button from "../components/ui/Button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card"
-import { BookOpen, PenTool, Users } from "lucide-react"
+import { Link } from "react-router-dom";
+import Button from "../components/ui/Button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card";
+import { BookOpen, PenTool, Users } from "lucide-react";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20 px-10">
+        <div className=" mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Welcome to BookVerse</h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl p-10 max-w-2xl mx-auto">
             Your ultimate destination for book publishing, reading, and discovering amazing stories from authors
             worldwide.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          
+              <Button className="block bg-indigo-700 m-10">
+                {/* <BookOpen className="mr-2 h-5 w-5" /> */}
+                Browse Books
+              </Button>
+          <div className="flex gap-4 justify-center ">
             <Link to="/books">
-              <Button size="lg" variant="secondary">
+              <Button className="display: block; bg-indigo-700 p-10">
                 <BookOpen className="mr-2 h-5 w-5" />
                 Browse Books
               </Button>
@@ -38,8 +43,8 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose BookVerse?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold text-center mb-12 p-5 m-10">Why Choose BookVerse?</h2>
+          <div className="grid md:grid-cols-3 gap-8 p-4">
             <Card>
               <CardHeader>
                 <BookOpen className="h-12 w-12 text-blue-600 mb-4" />
@@ -55,7 +60,7 @@ export default function HomePage() {
 
             <Card>
               <CardHeader>
-                <PenTool className="h-12 w-12 text-green-600 mb-4" />
+                <PenTool className="h-12 w-12 text-green-600 m-10" />
                 <CardTitle>Easy Publishing</CardTitle>
                 <CardDescription>Publish your books with our simple and intuitive platform</CardDescription>
               </CardHeader>
@@ -103,6 +108,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <HomePage/>
     </div>
+
   )
 }
